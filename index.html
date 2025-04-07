@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Certificados Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="/complements/img/icono.png">
+	<link rel="stylesheet" type="text/css" href="/complements/css/bootstrap.css">
+    <!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="/complements/css/font-awesome.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+	<link rel="stylesheet" type="text/css" href="/complements/css/AdminLTE.css">
+	<link rel="stylesheet" type="text/css" href="/complements/css/skin-green.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" type="text/css" href="/complements/plugins/iCheck/square/blue.css">
+    <!-- JQuery -->
+    <script type="text/javascript" src="/complements/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/complements/js/jquery-ui.min.js"></script>
+  </head>
+  <body class="hold-transition login-page">
+    <div>
+      <img src="/complements/img/cabecera2.png" style="width: 152px;position: relative;margin: 26px;">
+    </div>
+  	  <div class="login-box">
+    <div class="login-logo">
+      <a href="">Certificados Online <b>IPSS</b></a>
+    </div><!-- /.login-logo -->
+    <div class="login-box-body">
+      <p class="login-box-msg">Inicia sesión para acceder</p>
+      <!-- Dialogos modal -->
+                  <!--                -->
+                        <form action="https://certificados.ipss.cl/auth/login" method="POST">
+      <input type="hidden" name="_token" value="ZV9Iz32ikS5nCbG79LXcsURgaccgx373AYalJr4N">      
+
+        <div class="form-group has-feedback">
+          <input type="text" name="Rut" class="form-control" placeholder="Rut. Ej: 123456789">
+          <span class="glyphicon glyphicon glyphicon-barcode form-control-feedback"></span>
+                  </div>
+        <div class="form-group has-feedback">
+          <input type="password" name="Password" class="form-control" placeholder="Password">
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                  </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>
+          </div><!-- /.col -->
+        </div>
+        <hr>
+        <!-- <div class="row">
+          <div class="col-xs-12">
+          <a href="https://certificados.ipss.cl/auth/redirect" class="btn btn-o365 btn-block">
+            Login con Office 365
+            <img src="https://partner.microsoft.com/-/media/mssc/mpn/partner/solutions/images/simplehero_sideimage_400x225_office365.ashx" alt="Logo" width="40">
+          </a>
+          </div>
+        </div>-->        
+      </form>
+    </div><!-- /.login-box-body -->
+  </div><!-- /.login-box -->
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><b>Formulario de contacto</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="https://certificados.ipss.cl/Contacto" method="POST">
+          <input type="hidden" name="_token" value="ZV9Iz32ikS5nCbG79LXcsURgaccgx373AYalJr4N"> 
+
+          <!-- Rut -->
+          <div class="form-group has-feedback">
+            <label for="Rut_contacto">Rut</label>
+            <input type="text" name="Rut_contacto" class="form-control" placeholder="Rut. Ej: 123456789">
+            <span class="glyphicon glyphicon glyphicon-barcode form-control-feedback"></span>
+                      </div>
+          <br/>
+          <div class="form-group has-feedback">
+            <label for="nombres">Nombres</label>
+            <input type="text" name="nombres" class="form-control" placeholder="Ej: Luis Alberto">
+            <span class="glyphicon glyphicon glyphicon-user form-control-feedback"></span>
+                      </div>
+          <br/>
+          <div class="form-group has-feedback">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" class="form-control" placeholder="Ej: Sandoval Cruz">
+            <span class="glyphicon glyphicon glyphicon-user form-control-feedback"></span>
+                      </div>
+          <br/>
+          <div class="form-group has-feedback">
+            <label for="mail_contacto">Correo electrónico</label>
+            <input type="text" name="mail_contacto" class="form-control" placeholder="Ej: luis.alberto@gmail.com">
+            <span class="glyphicon glyphicon glyphicon-send form-control-feedback"></span>
+                      </div>
+          <br/>
+          <div class="form-group has-feedback">
+            <label for="fono_contacto">Celular</label>
+            <input type="text" name="fono_contacto" class="form-control" placeholder="Ej: +56912345678">
+            <span class="glyphicon glyphicon glyphicon-earphone form-control-feedback"></span>
+                      </div>
+          <br/>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    	<script type="text/javascript" src="/complements/js/jquery-2.1.3.min.js"></script>
+
+	<script type="text/javascript" src="/complements/js/bootstrap.js"></script>
+	<style>
+    .btn-o365 {
+      color: white!important;
+      background-color: #DC3E15;
+      /* border-color: #c63813; */
+      border-radius: 5px;
+    }    
+  </style>
+  <!-- iCheck -->
+    <script src="/complements/plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' // optional
+        });
+      });
+    </script>
+  </body>
+</html>
