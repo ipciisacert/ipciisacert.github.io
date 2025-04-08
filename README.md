@@ -1,2 +1,2 @@
 # Plugin generator Cert
-# ipp San Sebastian
+# ipss San Sebastian
